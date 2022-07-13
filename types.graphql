@@ -28,3 +28,11 @@ type PersonInfo {
   """
   contact: ContactInfo
 }
+
+"""
+Contact related information
+"""
+type ContactInfo {
+  email: String
+  phoneNumber: String
+}
