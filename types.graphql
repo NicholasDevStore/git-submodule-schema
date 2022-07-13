@@ -10,3 +10,21 @@ type User @key(fields: "id") {
   preferences: UserPreferences
   status: UserStatus!
 }
+
+"""
+People specific information
+"""
+type PersonInfo {
+  firstName: String!
+  lastName: String
+
+  """
+  Not implemented
+  """
+  locations: [Location!]!
+
+  """
+  Contact details
+  """
+  contact: ContactInfo
+}
