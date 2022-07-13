@@ -1,0 +1,12 @@
+type User @key(fields: "id") {
+  """
+  User unique identifier
+  """
+  id: ID!
+
+  personalInfo: PersonInfo!
+  title: String
+  role: UserRole!
+  preferences: UserPreferences
+  status: UserStatus!
+}
