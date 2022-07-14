@@ -1,0 +1,19 @@
+"""
+User onboarding status
+"""
+enum UserStatus {
+  """
+  User has been created but not completed the onboarding yet
+  """
+  InvitationPending
+
+  """
+  User has joined
+  """
+  Joined
+
+  """
+  User is disabled
+  """
+  Disabled
+}
